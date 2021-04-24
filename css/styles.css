@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+.discount p {
+  background-color: #1cd1b0;
+  font-size: 15px;
+  padding: 3px 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+header {
+  background-color: #00669f;
+  color: #fff;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  position: absolute;
+  left: 129px;
+  top: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+img {
+  margin-left: 0;
+  left: 49.76%;
+  right: 48.91%;
+  top: 39.19%;
+  bottom: 59.03%;
+}
+.navegador {
+  background-color: #001D2D;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  justify-items: right;
+  height: 40px;
+  display: block;
+  padding: 5px;
+  position: sticky;
+}
+
+.nav {
+  color: #fff;
+  text-align: right;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.sticky{
+  position: sticky;
+}
+.card {
+  margin: 1%;
+  width: 350px;
+  /*position: relative;*/
+ /* left: 40%;*/
+ display: inline-block;
+}
+main {
+    text-align: center;
+}
+.content {
+  text-align: center;
+  background-color: #f3f3f3;
+  position: relative;
+  height: 350px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 20px 20px;
+ 
+}
+
+.content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 26%;
+  top: -22%;
+}
+.content h2 {
+  padding-top: 75px;
+}
+
+.texto {
+  padding: 15px 20px;
+  text-align: left;
+  height: 100px;
+}
+
+.vermas {
+  background-color: #00669f;
+  border-radius: 7px;
+  color: #f3f3f3;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 50px;
+  position: relative;
+  bottom: -65px;
+}
+
+
+
+.top-back {
+  background-image: url("../img/bg-batman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.top-back2 {
+  background-image: url("../img/bg-wonderw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.top-back3 {
+  background-image: url("../img/bg-superman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.top-card {
+  border-radius: 20px 20px 0 0;
+}
+
+.fa-heart {
+  color: red;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 25px;
+  padding-right: 300px;
+}
+
+.fa-plus-circle {
+  color: #00669f;
+  position: fixed;
+  font-size: 70px;
+  right: 03%;
+  top: 50%;
+}
+footer {
+  height: 70px;
+  width: 100%;
+  left: -136px;
+  top: 3949px;
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff9f9;
+  /*position: absolute;
+  width: 758px;
+  height: 42px;
+  left: 512px;
+  top: 4009px;*/
+
+  
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 22px;
+}
+  
