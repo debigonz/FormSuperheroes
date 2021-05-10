@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadí tu Super</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
-    <div class="dcto">20% de descuento en todos los productos</div>
-    <header class="header">
-        <img class="tienda" src="images/tienda.png" alt="tienda">
-        <p class="tienda-p">Nombre Tienda</p>
-    </header>
-<nav>
-    <ul>
-        <li>Contacto</li>
-        <li>Registro</li>
-        <li>Ingresar</li>
-    </ul>
-</nav>
+    <div class="discount">
+        <p>20% de descuento en todos los productos!</p>
+    </div>
+    <div class="sticky">
+<header class="sticky">
+    <div class="logo">
+        <img src="img/logo_1imgTienda.png" alt="logoTienda">
+        <h1>Nombre Tienda</h1>
+        </div>   
+        <nav class="navegador">
+            <a class="nav" href="./html/contact.html">Contacto</a>
+            <a class="nav" href="./registro.html">Registrarme</a>
+            <a class="nav" href="./login.html">Ingresar</a>  
+        </nav> 
+</header>
 <div class="form-container">
     <h2>Añadí tu super!</h2>
     <p>Agregá tu personaje favorito completando las opciones.</p>
         <form action="#" method="POST" class="form">
-            <div class="form-izq">
+            <div class="los2">
+                <div class="form-izq">
                 <label for="name">
                     *Nombre
                     <input type="text" id="name" name="name">
@@ -34,9 +38,9 @@
                     <input type="date" id="date" name="date">
                 </label>
                 <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <label for="">
+                </div>
+                <div class="form-der">
+                <label for="especie">
                     *Especie
                     <select name="especie" id="especie">
                         <option value="Indefinido" selected >Indefinido</option>
@@ -45,27 +49,23 @@
                         <option value="Criptoniano">Criptoniano</option>
                     </select>
                 </label>
-                <label for="">
+                <label for="agregarfoto">
                     Agregar Foto
                     <input type="file" name="img" id="foto" accept=".jpg,.png" placeholder="Seleccionar archivo">
-                    <span>No se eligió archivo</span>
                 </label>
                 <h3>Poderes</h3>
-                <label for="volar">
-                    <input type="checkbox" name="volar">
-                    Volar
-                <label for="superinteligencia">
+                <label for="volar">Volar</label>
+                <input type="checkbox" name="volar">
+                
+                <label for="superinteligencia">Superinteligencia</label>
                     <input type="checkbox" name="superinteligencia">
-                    Superinteligencia
-                </label>
-                <label for="VistaRayoLaser">
+    
+                <label for="VistaRayoLaser">Vista de rayo láser</label>
                     <input type="checkbox" name="VistaRayoLaser">
-                    Vista de rayo láser
-                </label>
-                <label for="BilleteraGorda">
+            
+                <label for="BilleteraGorda">Billetera gorda</label>
                     <input type="checkbox" name="BilleteraGorda">
-                    Billetera gorda
-                </label>
+                    
                 <hr>
                 <h3>Tipo de personaje</h3>
                 <label for="heroe">
@@ -76,8 +76,13 @@
                     <input type="radio" name="villano" id="villano">
                     Villano/Villana
                 </label>
+                </div>
+                </div>
             </div>
-            <input type="submit" value="Añadir">
+            <div class="boton-submit">
+                <input type="submit" value="Añadir">
+            </div>
+            
         </form>
     </div>
     <footer class="footer">Todos los derechos reservados a FRONT END 1</footer>
