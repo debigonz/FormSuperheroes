@@ -80,7 +80,7 @@ img {
     display: block;
     margin: 50px auto;
     padding: 25px;
-    width: 800px;
+    width: 900px;
     height: 800px;
     left: 243px;
     top: 184px;
@@ -94,7 +94,7 @@ h2, p {
 }
 h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .form-container p {
     font-weight: 300;
@@ -103,7 +103,7 @@ h2 {
 
 .los2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form-izq, .form-der {
@@ -138,21 +138,33 @@ label, h3 {
     text-align: left;
     text-indent: 3%;
     color: white;
-    font-family: 'inter', sans-serif;
-    /*font-weight: 300;*/
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px; 
-    line-height: 24,2px; 
+    line-height: 24,2px;
+    margin-bottom: 5px; 
+    
 }
 
 select {
-    width: 24px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    width: 343px;
+    height: 63px;
+    left: 366px;
+    top: 329px;
+    /*width: 24px;
     height: 20px;
     border-radius: 10px;
     width: 95%;
     outline: none;
     font-size: 16px;
     margin-top: 10px;
-    border: none;
+    border: none;*/
 }
 
 textarea {
@@ -184,6 +196,32 @@ textarea::placeholder {
     margin: 0%;
 }
 
+/*Agregamos estas lineas*/
+
+.form-der .test, .tester {
+    display: flex;
+    margin-bottom: 20px;
+}
+.form-der .test label {
+    margin: 0;
+    width: 343px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+  
+  /*Agregamos estas lineas*/
+.form-der .tester label {
+    margin: 0;
+    width: 343px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
 hr {
     margin: 25px 0 ;
 }
@@ -199,6 +237,7 @@ hr {
     font-weight: 700;
     background-color: #1CD1B0;
     transition: all .3s;
+    margin-top: 20px
 }
 .boton-submit input:hover {
     background-color: #001D2D;

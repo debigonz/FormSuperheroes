@@ -11,7 +11,8 @@
     <div class="discount">
         <p>20% de descuento en todos los productos!</p>
     </div>
-    <div class="sticky">
+    <!--HAY QUE BORRAR ESTE DIV CON CLASE STICKY, YA QUE NO CUMPLE FUNCION ACA DENTRO, y habria que eliminar el cierre que esta por abajo de todo en la linea 99-->
+    <!-- <div class="sticky"> -->
 <header class="sticky">
     <div class="logo">
         <img src="img/logo_1imgTienda.png" alt="logoTienda">
@@ -37,13 +38,14 @@
                     *Fecha
                     <input type="date" id="date" name="date">
                 </label>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
                 </div>
                 <div class="form-der">
                 <label for="especie">
                     *Especie
                     <select name="especie" id="especie">
-                        <option value="Indefinido" selected >Indefinido</option>
+                        <option hidden selected>Especie</option>
+                        <option value="Indefinido">Indefinido</option>
                         <option value="Aliens">Aliens</option>
                         <option value="Saiayin">Saiayin</option>
                         <option value="Criptoniano">Criptoniano</option>
@@ -54,37 +56,55 @@
                     <input type="file" name="img" id="foto" accept=".jpg,.png" placeholder="Seleccionar archivo">
                 </label>
                 <h3>Poderes</h3>
-                <label for="volar">Volar</label>
-                <input type="checkbox" name="volar">
-                
-                <label for="superinteligencia">Superinteligencia</label>
+
+                <!--Agregamos un contenedor de nuevos inputs y labels-->
+                <div class="test">
+                    <input type="checkbox" name="volar">
+                    <label for="volar">Volar</label>
+
+                </div>
+
+                 <!--Agregamos un contenedor de nuevos inputs y labels-->
+                <div class="test">
                     <input type="checkbox" name="superinteligencia">
+                    <label for="superinteligencia">Superinteligencia</label>
+                </div>
     
-                <label for="VistaRayoLaser">Vista de rayo láser</label>
+                     <!--Agregamos un contenedor de nuevos inputs y labels-->
+                <div class="test">
                     <input type="checkbox" name="VistaRayoLaser">
-            
-                <label for="BilleteraGorda">Billetera gorda</label>
-                    <input type="checkbox" name="BilleteraGorda">
+                    <label for="VistaRayoLaser">Vista de rayo láser</label>
+                    
+                </div>
+
+                     <!--Agregamos un contenedor de nuevos inputs y labels-->
+                <div class="test">
+                    <input type="checkbox" name="BilleteraGorda"> 
+                    <label for="BilleteraGorda">Billetera gorda</label>
+                    
+                </div>
                     
                 <hr>
                 <h3>Tipo de personaje</h3>
-                <label for="heroe">
-                    <input type="radio" name="heroe" id="heroe">
-                    Héroe/Heroína
-                </label>
-                <label for="villano">
-                    <input type="radio" name="villano" id="villano">
-                    Villano/Villana
-                </label>
+                <div class="tester">
+                    <input type="radio" id="heroe" name="heroe" value="Héroe/Heroína">
+                    <label for="heroe">Héroe/Heroína</label>
+                </div>
+                <div class="tester">
+                <input type="radio" id="villano" name="villano" value="Villano/Villana">
+                <label for="villano">Villano/Villana</label>
                 </div>
                 </div>
-            </div>
-            <div class="boton-submit">
-                <input type="submit" value="Añadir">
+                </div>
+                <div class="boton-submit">
+                    <input type="submit" value="Añadir">
+                </div>
             </div>
             
         </form>
-    </div>
+            
+       <!--HAY DIV ES EL CIERRE DEL DIV CON CLASE STICKY-->
+    <!-- </div> -->
     <footer class="footer">Todos los derechos reservados a FRONT END 1</footer>
 </body>
 </html>
